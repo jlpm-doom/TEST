@@ -4,7 +4,7 @@ pipeline {
     stage('Ping') {
       steps {
         sh '''ansible all    -m ping 
-'''
+-u jlpm'''
       }
     }
 
