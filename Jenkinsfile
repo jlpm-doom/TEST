@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Ping') {
       steps {
-        sh 'ansible all   -m ping -vvvv -u jlpm'
+        sh '''ansible all   -m ping 
+'''
       }
     }
 
